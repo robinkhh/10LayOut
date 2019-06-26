@@ -1,0 +1,24 @@
+﻿@model IEnumerable<PhotoSharing.Models.Comment>
+
+<div>
+    <div class="well">
+        @foreach (var item in Model)
+        {
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h4>@item.Subject</h4>
+                </div>
+                <div class="panel-body">
+                    <p>@item.Body</p>
+                    <p class="text-right">
+                        回覆人:@item.UserName
+                    </p>
+                </div>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
